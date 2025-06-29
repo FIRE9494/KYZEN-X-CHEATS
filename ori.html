@@ -1,0 +1,2875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYZEN x CHEATS - Premium Free Fire PC Panels</title>
+    <!-- Font Awesome Icons - Preconnect for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap">
+    
+    <style>
+        /* Color variables - KYZEN x CHEATS Theme */
+        :root {
+            --primary-black: #0a0a0a;
+            --secondary-black: #121212;
+            --primary-red: #ff0044;
+            --primary-purple: #a855f7;
+            --primary-blue: #471ed4;
+            --deep-purple: #2a1170;
+            --cosmic-purple: #1a0b3e;
+            --primary-yellow: #FFD700;
+            --primary-white: #ffffff;
+            --neon-purple: #9932CC;
+            --dark-gradient: linear-gradient(135deg, var(--cosmic-purple) 0%, #09071b 100%);
+            --red-gradient: linear-gradient(135deg, var(--primary-red) 0%, #990020 100%);
+            --purple-gradient: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-blue) 100%);
+            --header-gradient: linear-gradient(90deg, rgba(26, 11, 62, 0.95), rgba(71, 30, 212, 0.8), rgba(26, 11, 62, 0.95));
+            --glow-red: 0 0 10px var(--primary-red), 0 0 20px var(--primary-red);
+            --glow-purple: 0 0 10px var(--primary-purple), 0 0 20px var(--primary-purple);
+            --glow-yellow: 0 0 10px var(--primary-yellow), 0 0 20px var(--primary-yellow);
+            --glow-blue: 0 0 10px var(--primary-blue), 0 0 20px var(--primary-blue);
+        }
+
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        body {
+            background-color: var(--cosmic-purple);
+            color: var(--primary-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/4.25.0/starship.svg');
+            background-size: 400px;
+            background-repeat: repeat;
+            background-blend-mode: soft-light;
+            background-attachment: fixed;
+            position: relative;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 10%, rgba(138, 43, 226, 0.4) 0%, transparent 30%),
+                radial-gradient(circle at 90% 30%, rgba(255, 0, 53, 0.3) 0%, transparent 30%),
+                radial-gradient(circle at 50% 50%, rgba(26, 11, 62, 0.5) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+            background-attachment: fixed;
+            animation: backgroundPulse 15s infinite alternate;
+            will-change: opacity, transform; /* Hardware acceleration hint */
+        }
+
+        @keyframes backgroundPulse {
+            0% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 0.9;
+                transform: scale(1.1);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--primary-red);
+            color: var(--primary-white);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(255, 0, 53, 0.4);
+            z-index: 1;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 0, 53, 0.5), 0 0 15px var(--primary-red);
+            background: #ff1a2d;
+        }
+
+        .btn.btn-purple {
+            background: var(--primary-purple);
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .btn.btn-purple:hover {
+            background: #9333EA;
+            box-shadow: 0 7px 20px rgba(168, 85, 247, 0.5), 0 0 15px var(--primary-purple);
+        }
+
+        .btn.btn-yellow {
+            background: var(--primary-yellow);
+            color: var(--primary-black);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn.btn-yellow:hover {
+            background: #FFC125;
+            box-shadow: 0 7px 20px rgba(255, 215, 0, 0.5), 0 0 15px var(--primary-yellow);
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--primary-white);
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-purple), var(--primary-red));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlight {
+            color: var(--primary-red);
+            text-shadow: var(--glow-red);
+        }
+
+        .highlight-purple {
+            color: var(--primary-purple);
+            text-shadow: var(--glow-purple);
+        }
+
+        .highlight-yellow {
+            color: var(--primary-yellow);
+            text-shadow: var(--glow-yellow);
+        }
+
+        /* Header styles - Enhanced */
+        header {
+            background: var(--header-gradient);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(138, 43, 226, 0.2);
+            border-bottom: 2px solid rgba(255, 0, 53, 0.3);
+            backdrop-filter: blur(5px);
+            animation: headerReveal 1s ease forwards;
+            will-change: transform, opacity; /* Hardware acceleration hint */
+        }
+
+        @keyframes headerReveal {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-white);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 5px 15px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            font-family: 'Orbitron', sans-serif;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                          transparent, 
+                          rgba(255, 0, 53, 0.2), 
+                          transparent);
+            animation: logo-shine 3s infinite;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        @keyframes logo-shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .logo span.kyzen {
+            background: linear-gradient(to right, var(--primary-white), var(--primary-red));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+            font-style: italic;
+            animation: textGlow 3s infinite alternate;
+        }
+
+        .logo span.x {
+            color: var(--primary-red);
+            margin: 0 10px;
+            font-style: italic;
+            font-size: 2.2rem;
+            text-shadow: var(--glow-red);
+            transform: skewX(-15deg);
+            display: inline-block;
+            animation: pulsate 2s infinite alternate;
+            will-change: transform, text-shadow; /* Hardware acceleration hint */
+        }
+
+        .logo span.cheats {
+            background: linear-gradient(to right, var(--primary-purple), var(--primary-yellow));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(138, 43, 226, 0.3);
+            font-weight: 900;
+            animation: textGlow 3s infinite alternate-reverse;
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                text-shadow: 0 0 15px rgba(255, 0, 68, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 0, 68, 0.5);
+            }
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1) skewX(-15deg);
+                text-shadow: 0 0 5px rgba(255, 0, 68, 0.5);
+            }
+            50% {
+                transform: scale(1.15) skewX(-15deg);
+                text-shadow: 0 0 15px rgba(255, 0, 68, 0.8), 0 0 30px rgba(255, 0, 68, 0.4);
+            }
+            100% {
+                transform: scale(1.1) skewX(-15deg);
+                text-shadow: 0 0 15px rgba(255, 0, 68, 0.8);
+            }
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--primary-white);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 10px 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary-red), var(--primary-purple));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-red);
+            text-shadow: 0 0 8px rgba(255, 0, 53, 0.5);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--primary-white);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero section - Enhanced */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            background: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/4.25.0/freefiremax.svg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 11, 62, 0.9) 0%, rgba(15, 5, 30, 0.8) 100%);
+            z-index: 1;
+        }
+
+        /* Optimized hero stars for better performance */
+        .hero-stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, var(--primary-white), rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, var(--primary-white), rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 50px 160px, var(--primary-white), rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 90px 40px, var(--primary-white), rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 250px 250px;
+            animation: stars-move 100s linear infinite;
+            opacity: 0.7;
+            z-index: 0;
+            will-change: background-position; /* Hardware acceleration hint */
+        }
+
+        @keyframes stars-move {
+            from { background-position: 0 0; }
+            to { background-position: 250px 250px; }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(138, 43, 226, 0.4) 0%, transparent 30%),
+                radial-gradient(circle at 70% 60%, rgba(255, 0, 53, 0.3) 0%, transparent 30%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero-text {
+            padding-right: 20px;
+        }
+
+        .hero-logo {
+            margin-bottom: 30px;
+            transform: scale(1.2);
+            display: inline-block;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .logo-text.kyzen {
+            background: linear-gradient(to right, var(--primary-white), var(--primary-red));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+            font-style: italic;
+        }
+
+        .logo-text.x {
+            color: var(--primary-red);
+            margin: 0 5px;
+            font-style: italic;
+            font-size: 2.7rem;
+            text-shadow: var(--glow-red);
+            transform: skewX(-15deg);
+            display: inline-block;
+        }
+
+        .logo-text.cheats {
+            background: linear-gradient(to right, var(--primary-purple), var(--primary-yellow));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(138, 43, 226, 0.3);
+            font-weight: 900;
+        }
+
+        .top-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--primary-white);
+            letter-spacing: 3px;
+            position: relative;
+            padding-left: 40px;
+            animation: slideInLeft 1s ease forwards;
+            will-change: transform, opacity; /* Hardware acceleration hint */
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .top-title::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--primary-red);
+            transform: translateY(-50%);
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .main-title {
+            display: block;
+            font-size: 4.5rem;
+            background: linear-gradient(to right, var(--primary-white), var(--primary-red));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+            animation: titleFadeIn 1.5s ease forwards;
+            will-change: transform, opacity; /* Hardware acceleration hint */
+        }
+
+        @keyframes titleFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 90%;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease forwards 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            will-change: transform, opacity; /* Hardware acceleration hint */
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease forwards 1.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            will-change: opacity; /* Hardware acceleration hint */
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            animation: fadeInUp 1s ease forwards 2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            will-change: opacity; /* Hardware acceleration hint */
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            line-height: 1;
+            margin-bottom: 5px;
+            text-shadow: var(--glow-red);
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .player-image {
+            width: 100%;
+            max-width: 500px;
+            filter: drop-shadow(0 0 25px rgba(168, 85, 247, 0.7));
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+            transform-origin: center center;
+            transition: transform 0.5s ease;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .player-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Optimized image glow for better performance */
+        .image-glow {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle at center, rgba(255, 0, 68, 0.4) 0%, rgba(138, 43, 226, 0.4) 30%, transparent 70%);
+            filter: blur(40px);
+            z-index: 1;
+            animation: pulse-glow 4s infinite alternate;
+            will-change: opacity, transform; /* Hardware acceleration hint */
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                opacity: 0.5;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+        }
+
+        .floating-icon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(26, 11, 62, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+            z-index: 3;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .floating-icon i {
+            font-size: 1.5rem;
+            color: var(--primary-white);
+        }
+
+        .icon-1 {
+            top: 20%;
+            left: 10%;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .icon-2 {
+            bottom: 30%;
+            left: 15%;
+            animation: float 6s ease-in-out infinite 1s;
+        }
+
+        .icon-3 {
+            top: 40%;
+            right: 15%;
+            animation: float 5s ease-in-out infinite 0.5s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .hero-bottom-curve {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+        }
+
+        /* Features Section - Enhanced */
+        .features-section {
+            padding: 100px 0;
+            background-color: #0f051e;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .features-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(26, 11, 62, 0.3) 0%, rgba(15, 5, 30, 0.3) 100%);
+            z-index: 0;
+        }
+
+        .features-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            animation: fadeIn 1.5s ease both;
+        }
+
+        .sub-heading {
+            color: #ff0044;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            background: rgba(255, 0, 68, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            animation: glowText 2s infinite alternate;
+            will-change: box-shadow; /* Hardware acceleration hint */
+        }
+
+        @keyframes glowText {
+            0% {
+                box-shadow: 0 0 5px rgba(255, 0, 68, 0.3);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(255, 0, 68, 0.6);
+            }
+        }
+
+        .highlight-text {
+            color: #ff0044;
+            text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);
+        }
+
+        .title-line {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #a855f7, #ff0044);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .title-line::before,
+        .title-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 6px;
+            height: 4px;
+            background-color: #ff0044;
+        }
+
+        .title-line::before {
+            left: -10px;
+        }
+
+        .title-line::after {
+            right: -10px;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(26, 11, 62, 0.3);
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.5s ease, 
+                        background 0.5s ease, 
+                        border-color 0.5s ease;
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            will-change: transform, opacity; /* Hardware acceleration hint */
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 0, 68, 0.2);
+            background: linear-gradient(135deg, rgba(26, 11, 62, 0.7), rgba(26, 11, 62, 0.4));
+            border-color: rgba(255, 0, 68, 0.5);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                        rgba(255, 0, 68, 0.1) 0%, 
+                        rgba(168, 85, 247, 0.1) 50%, 
+                        rgba(255, 215, 0, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            margin-bottom: 20px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(255, 0, 68, 0.2), rgba(168, 85, 247, 0.2));
+            color: #ffffff;
+            font-size: 1.5rem;
+            transition: all 0.5s ease;
+            animation: pulse 3s infinite;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: linear-gradient(135deg, rgba(255, 0, 68, 0.3), rgba(168, 85, 247, 0.3));
+            box-shadow: 0 0 20px rgba(255, 0, 68, 0.5);
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .feature-description {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        /* Enhanced Pricing Section with Consistent Design */
+        .pricing-section {
+            padding: 100px 0;
+            background-color: #0f051e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 68, 0.5), transparent);
+        }
+
+        .pricing-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.5), transparent);
+        }
+
+        .safety-badge {
+            color: #ff0044;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
+            display: inline-block;
+            font-family: 'Orbitron', sans-serif;
+            animation: glow 2s infinite alternate;
+            padding: 10px 25px;
+            border: 1px solid rgba(255, 0, 68, 0.3);
+            border-radius: 50px;
+            background: rgba(255, 0, 68, 0.1);
+            will-change: box-shadow; /* Hardware acceleration hint */
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(255, 0, 68, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(255, 0, 68, 0.8); }
+        }
+
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        /* Unified Card Design */
+        .pricing-card {
+            background: linear-gradient(145deg, rgba(26, 11, 62, 0.8), rgba(15, 5, 30, 0.8));
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.5s ease, 
+                        border-color 0.5s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 0, 68, 0.2);
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 0, 68, 0.3);
+            border-color: rgba(255, 0, 68, 0.5);
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(255, 0, 68, 0.2), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .pricing-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Best Value Card */
+        .pricing-card.best-value {
+            position: relative;
+            z-index: 2;
+            transform: scale(1.05);
+            border: 2px solid rgba(255, 0, 68, 0.6);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 0, 68, 0.4);
+            background: linear-gradient(145deg, rgba(30, 13, 70, 0.9), rgba(20, 8, 40, 0.9));
+        }
+
+        .pricing-card.best-value:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 0, 68, 0.5);
+        }
+
+        .best-value-tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(135deg, #ff0044, #cc0036);
+            color: #ffffff;
+            padding: 10px 15px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            transform: rotate(45deg) translate(30%, -50%);
+            transform-origin: top right;
+            z-index: 3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Card Header */
+        .card-header {
+            background: linear-gradient(135deg, #ff0044, #cc0036);
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shine 3s infinite;
+            will-change: left; /* Hardware acceleration hint */
+        }
+
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+            20%, 100% {
+                left: 100%;
+            }
+        }
+
+        .card-title {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Card Content */
+        .card-content {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-price {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            display: block;
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            font-family: 'Orbitron', sans-serif;
+            color: #ff0044;
+            text-shadow: 0 0 15px rgba(255, 0, 68, 0.5);
+            background: linear-gradient(135deg, #ff0044, #ff3369);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .period {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+            flex-grow: 1;
+        }
+
+        .feature-list li {
+            color: #ffffff;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li:hover {
+            background: rgba(255, 0, 68, 0.1);
+            transform: translateX(5px);
+        }
+
+        .feature-list li i {
+            color: #ff0044;
+            margin-right: 10px;
+            font-size: 1.1rem;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        /* Card Action Button */
+        .card-action {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .btn-card {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #ff0044, #cc0036);
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .btn-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #cc0036, #ff0044);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 0, 68, 0.4);
+        }
+
+        .btn-card:hover::before {
+            opacity: 1;
+        }
+
+        .btn-card-highlight {
+            background: linear-gradient(135deg, #ff0044, #ff3369);
+            box-shadow: 0 5px 15px rgba(255, 0, 68, 0.3);
+        }
+
+        .btn-card-highlight::before {
+            background: linear-gradient(135deg, #ff3369, #ff0044);
+        }
+
+        .btn-card-highlight:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 68, 0.5);
+        }
+
+        /* Floating Social Media Icons - Enhanced */
+        .floating-social {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .social-float-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            will-change: transform; /* Hardware acceleration hint */
+        }
+
+        .social-float-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .social-float-icon:hover {
+            transform: scale(1.2) translateX(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .social-float-icon:hover::before {
+            opacity: 1;
+            animation: iconGlowPulse 1.5s infinite;
+        }
+
+        @keyframes iconGlowPulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+            100% { opacity: 0.3; }
+        }
+
+        .whatsapp-icon {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .tiktok-icon {
+            background: linear-gradient(135deg, #EE1D52, #69C9D0);
+            animation: float 4s ease-in-out infinite 0.5s;
+        }
+
+        .message-icon {
+            background: linear-gradient(135deg, #ff0044, #a855f7);
+            animation: float 4s ease-in-out infinite 1s;
+        }
+
+        .tooltip {
+            position: absolute;
+            right: 70px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            pointer-events: none; /* Prevent tooltip from blocking interactions */
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            transform: translateY(-50%);
+            border-width: 5px 0 5px 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+        }
+
+        .social-float-icon:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+
+        /* Footer - Enhanced */
+        footer {
+            background: linear-gradient(to bottom, #0a0a0a, #000000);
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+            border-top: 2px solid rgba(255, 0, 53, 0.3);
+        }
+
+        .footer-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(255, 0, 53, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 25%);
+            z-index: 0;
+            animation: footerGlow 10s infinite alternate;
+            will-change: opacity, transform; /* Hardware acceleration hint */
+        }
+
+        @keyframes footerGlow {
+            0% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0.8;
+                transform: scale(1.2);
+            }
+        }
+
+        .footer-logo-container {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-white);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            padding: 10px 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 0, 53, 0.2), 0 0 60px rgba(138, 43, 226, 0.2);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .footer-logo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                          transparent, 
+                          rgba(255, 255, 255, 0.2), 
+                          transparent);
+            animation: footerLogoShine 5s infinite;
+            will-change: left; /* Hardware acceleration hint */
+        }
+
+        @keyframes footerLogoShine {
+            0% { left: -100%; }
+            20% { left: 100%; }
+            100% { left: 100%; }
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-red), var(--primary-purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px var(--primary-red);
+            border-color: var(--primary-red);
+        }
+
+        .social-link:hover::before {
+            opacity: 1;
+        }
+
+        .social-link i {
+            color: var(--primary-white);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover i {
+            transform: scale(1.2);
+        }
+
+        .footer-title {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+            color: var(--primary-white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-red), var(--primary-purple));
+            border-radius: 3px;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+        }
+
+        .footer-links a i {
+            color: var(--primary-red);
+            margin-right: 10px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+            transform: translateX(8px);
+        }
+
+        .footer-links a:hover i {
+            transform: translateX(3px);
+            color: var(--primary-yellow);
+        }
+
+        .footer-contact li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact i {
+            color: var(--primary-red);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .footer-contact i.pulse {
+            animation: contactPulse 2s infinite;
+            will-change: box-shadow; /* Hardware acceleration hint */
+        }
+
+        @keyframes contactPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 53, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 0, 53, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 53, 0);
+            }
+        }
+
+        .footer-contact p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.05rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-red), #990020);
+            color: var(--primary-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(255, 0, 53, 0.4);
+            will-change: opacity, transform; /* Hardware acceleration hint */
+        }
+
+        .to-top.active {
+            opacity: 1;
+            visibility: visible;
+            animation: toTopPulse 2s infinite;
+        }
+
+        @keyframes toTopPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 53, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 0, 53, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 53, 0);
+            }
+        }
+
+        .to-top:hover {
+            background: linear-gradient(135deg, #ff1a2d, var(--primary-red));
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 12px 15px;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 15px rgba(255, 0, 68, 0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Staggered Animation Delays for Cards */
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+        .feature-card:nth-child(5) { animation-delay: 0.5s; }
+        .feature-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .pricing-card:nth-child(1) { animation-delay: 0.1s; }
+        .pricing-card:nth-child(2) { animation-delay: 0.2s; }
+        .pricing-card:nth-child(3) { animation-delay: 0.3s; }
+        .pricing-card:nth-child(4) { animation-delay: 0.4s; }
+        .pricing-card:nth-child(5) { animation-delay: 0.5s; }
+        .pricing-card:nth-child(6) { animation-delay: 0.6s; }
+        .pricing-card:nth-child(7) { animation-delay: 0.7s; }
+
+        /* =================== */
+        /* MOBILE OPTIMIZATION */
+        /* =================== */
+        
+        /* Global Mobile Optimization */
+        @media (max-width: 992px) {
+            .section {
+                padding: 70px 0;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .main-title {
+                font-size: 3.2rem;
+            }
+            
+            .pricing-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .btn {
+                padding: 12px 30px;
+                font-size: 0.95rem;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 15px;
+            }
+        }
+
+        /* Medium Mobile Optimization */
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            /* Mobile Navigation Menu */
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(15, 5, 30, 0.95);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+                transition: all 0.3s ease;
+                z-index: 999;
+                padding: 20px;
+                overflow-y: auto;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 15px;
+                font-size: 1.1rem;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.05);
+                width: 100%;
+            }
+
+            .mobile-menu {
+                display: block;
+                z-index: 1001;
+            }
+
+            .mobile-menu.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .mobile-menu.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-menu.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            /* Hero Section Mobile */
+            .hero {
+                min-height: 100vh;
+                height: auto;
+                padding: 100px 0 50px;
+            }
+            
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+                margin-bottom: 20px;
+            }
+            
+            .player-image {
+                max-width: 85%;
+            }
+
+            .top-title {
+                padding-left: 0;
+                margin-bottom: 5px;
+                font-size: 1.2rem;
+            }
+
+            .top-title::before {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.3rem;
+                margin-bottom: 15px;
+            }
+            
+            .main-title {
+                font-size: 2.6rem;
+            }
+
+            .hero-description {
+                max-width: 100%;
+                margin: 0 auto 20px;
+                font-size: 1rem;
+            }
+
+            .hero-btns {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            
+            .stat {
+                width: 30%;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            
+            /* Features Section Mobile */
+            .features-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .feature-card {
+                padding: 25px 20px;
+            }
+            
+            .feature-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+            
+            .feature-title {
+                font-size: 1.1rem;
+            }
+            
+            /* Pricing Section Mobile */
+            .safety-badge {
+                font-size: 1.2rem;
+                padding: 8px 20px;
+            }
+            
+            .pricing-container {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .pricing-card {
+                margin-bottom: 25px;
+            }
+            
+            .pricing-card.best-value {
+                transform: scale(1);
+            }
+            
+            .pricing-card.best-value:hover {
+                transform: translateY(-15px);
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .feature-list li {
+                font-size: 0.95rem;
+                padding: 8px 10px;
+            }
+            
+            .card-action {
+                margin-top: 20px;
+            }
+            
+            .btn-card {
+                width: 100%;
+                padding: 12px 20px;
+            }
+            
+            /* Floating Social Icons Mobile */
+            .floating-social {
+                bottom: 20px;
+                right: 20px;
+                top: auto;
+                transform: none;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: auto;
+            }
+
+            .social-float-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .social-float-icon:hover {
+                transform: scale(1.1) translateY(-5px);
+            }
+
+            .tooltip {
+                right: auto;
+                bottom: 70px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .tooltip::after {
+                right: auto;
+                bottom: -5px;
+                top: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 5px 5px 0 5px;
+                border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+            }
+
+            .social-float-icon:hover .tooltip {
+                right: auto;
+                bottom: 75px;
+            }
+            
+            /* Footer Mobile */
+            footer {
+                padding: 50px 0 20px;
+            }
+            
+            .footer-logo {
+                font-size: 2rem;
+                padding: 8px 20px;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .footer-title {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+            
+            .footer-links li {
+                margin-bottom: 12px;
+            }
+            
+            .footer-links a {
+                font-size: 1rem;
+            }
+            
+            .footer-contact li {
+                margin-bottom: 15px;
+            }
+            
+            .footer-contact i {
+                width: 30px;
+                height: 30px;
+                font-size: 1.1rem;
+            }
+            
+            .footer-contact p {
+                font-size: 1rem;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        /* Small Mobile Optimization */
+        @media (max-width: 576px) {
+            .section {
+                padding: 50px 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            
+            .section-title:after {
+                width: 70px;
+                bottom: -10px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .main-title {
+                font-size: 2.3rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+                padding: 5px 10px;
+            }
+            
+            .logo span.x {
+                font-size: 1.7rem;
+                margin: 0 5px;
+            }
+            
+            .sub-heading {
+                font-size: 0.9rem;
+                padding: 5px 12px;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .stat {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .floating-social {
+                gap: 10px;
+            }
+            
+            .social-float-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+            
+            .pricing-card {
+                border-radius: 10px;
+            }
+            
+            .price {
+                font-size: 2.2rem;
+            }
+            
+            .best-value-tag {
+                font-size: 0.7rem;
+                padding: 8px 12px;
+            }
+            
+            .to-top {
+                width: 45px;
+                height: 45px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            /* Form elements for smaller screens */
+            .form-control {
+                padding: 10px 12px;
+                font-size: 0.95rem;
+            }
+            
+            textarea.form-control {
+                min-height: 120px;
+            }
+            
+            .btn-purple {
+                width: 100%;
+            }
+        }
+
+        /* Ultra Small Mobile Optimization */
+        @media (max-width: 380px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .top-title {
+                font-size: 1rem;
+            }
+            
+            .hero-description {
+                font-size: 0.95rem;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .logo span.x {
+                font-size: 1.5rem;
+            }
+            
+            .feature-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            
+            .feature-title {
+                font-size: 1rem;
+            }
+            
+            .pricing-card {
+                padding: 0;
+            }
+            
+            .card-content {
+                padding: 20px 15px;
+            }
+            
+            .price {
+                font-size: 2rem;
+            }
+            
+            .period {
+                font-size: 0.9rem;
+            }
+            
+            .feature-list li {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            
+            .footer-logo {
+                font-size: 1.7rem;
+                padding: 8px 15px;
+            }
+            
+            .floating-social {
+                gap: 8px;
+            }
+            
+            .social-float-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Fix for iOS touch event issues */
+        @supports (-webkit-touch-callout: none) {
+            .btn, .btn-card, .social-float-icon, .social-link, .feature-card, .pricing-card {
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            .hero {
+                background-attachment: scroll;
+            }
+            
+            body::before {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="kyzen">KYZEN</span>
+                <span class="x">X</span>
+                <span class="cheats">CHEATS</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-stars"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-logo">
+                        <span class="logo-text kyzen">KYZEN</span>
+                        <span class="logo-text x">X</span>
+                        <span class="logo-text cheats">CHEATS</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="top-title">BEST FREE FIRE</span>
+                        <span class="main-title">PANELS <span class="highlight-purple">TODAY</span></span>
+                    </h1>
+                    <p class="hero-description">
+                        Elevate your gaming experience with KYZEN x CHEATS premium Free Fire PC panels. 
+                        Get undetectable advantages and dominate every match with our secure, feature-rich panels.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#pricing" class="btn">View Packages</a>
+                        <a href="#contact" class="btn btn-purple">Contact Us</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">ACTIVE USERS</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">SUPPORT</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">UNDETECTED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="C:\miniklip games/free-fire-portada1 (1).jpg" alt="Free Fire Player" class="player-image">
+                    <div class="image-glow"></div>
+                    <div class="floating-icon icon-1"><i class="fas fa-crosshairs"></i></div>
+                    <div class="floating-icon icon-2"><i class="fas fa-shield-alt"></i></div>
+                    <div class="floating-icon icon-3"><i class="fas fa-bolt"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom-curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#0f051e" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,42.7C1120,32,1280,32,1360,32L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="features-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="sub-heading">PREMIUM FEATURES</div>
+                <h2 class="section-title">GAMING <span class="highlight-text">ADVANTAGES</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">AIM BOT NECK</h3>
+                        <p class="feature-description">
+                            Precision targeting system that automatically aims at enemy necks for maximum damage efficiency.
+                            Customizable settings for perfect control.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">SNIPER SCOPE</h3>
+                        <p class="feature-description">
+                            Enhanced sniper scope with improved visibility, reduced sway, and instant zoom capabilities.
+                            Dominate long-range combat with precision.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">FAST WEAPON SWITCH</h3>
+                        <p class="feature-description">
+                            Lightning-fast AWM and M82B weapon switching for immediate combat readiness.
+                            Gain the edge in critical firefights with zero delay.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">CAMERA HACK</h3>
+                        <p class="feature-description">
+                            Advanced camera modifications for extended field of view and enhanced situational awareness.
+                            See enemies before they see you.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">CHAMS MENU V1/V2</h3>
+                        <p class="feature-description">
+                            Comprehensive character highlighting system with customizable colors and visibility through objects.
+                            Available in two versions for different gameplay preferences.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">100% SAFE & SECURE</h3>
+                        <p class="feature-description">
+                            Our panels use advanced encryption and anti-detection technology to keep your account safe from bans. 
+                            Play with confidence knowing you're fully protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section with WhatsApp Links -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CHOOSE YOUR <span class="highlight-text">PACKAGE</span></h2>
+                <div class="title-line"></div>
+                <div class="safety-badge">ALL FUNCTIONS SAFE & UNDETECTED</div>
+            </div>
+            
+            <div class="pricing-container">
+                <!-- 3 Days -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">3 Days</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 400</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 7 Days -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">7 Days</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 750</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1 Month -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">1 Month</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 1500</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2 Months - Best Value -->
+                <div class="pricing-card best-value">
+                    <div class="best-value-tag">BEST VALUE</div>
+                    <div class="card-header">
+                        <h3 class="card-title">2 Months</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 2000</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card btn-card-highlight">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3 Months -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">3 Months</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 2600</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1 Year -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">1 Year</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 3300</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lifetime -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Lifetime</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <span class="price">Rs 4500</span>
+                            <span class="period">one-time payment</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-crosshairs"></i> AIM BOT NECK</li>
+                            <li><i class="fas fa-eye"></i> SNIPER SCOPE</li>
+                            <li><i class="fas fa-bolt"></i> AWM FAST SWITCH</li>
+                            <li><i class="fas fa-bolt"></i> M82B FAST SWITCH</li>
+                            <li><i class="fas fa-camera"></i> CAMERA HACK</li>
+                            <li><i class="fas fa-user-secret"></i> CHAMS MENU V1/V2</li>
+                        </ul>
+                        <div class="card-action">
+                            <a href="https://wa.me/94723596522" target="_blank" class="btn-card">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer <span class="highlight">Reviews</span></h2>
+            <div class="testimonial-container">
+                <div class="testimonial-content">
+                    I've tried many panels before, but KYZEN x CHEATS is on another level. 
+                    The features are amazing and I haven't had any detection issues for months. 
+                    The support team is also very responsive whenever I need help.
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/4.25.0/freefiremax.svg" alt="Gamer Avatar">
+                    </div>
+                    <div class="author-info">
+                        <h4>FireLegend92</h4>
+                        <p>Premium User</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>support@kyzen-cheats.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Discord</h4>
+                            <p>discord.gg/kyzen-cheats</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telegram</h4>
+                            <p>t.me/kyzen_cheats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-purple">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Social Media Icons -->
+    <div class="floating-social">
+        <a href="https://www.whatsapp.com/channel/0029VbAvdJNGJP8KX9ilrp1J" target="_blank" class="social-float-icon whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+            <span class="tooltip">Join WhatsApp Channel</span>
+        </a>
+        <a href="https://www.tiktok.com/@induwara_16y?_t=ZS-8xaZT3kwaKv&_r=1" target="_blank" class="social-float-icon tiktok-icon">
+            <i class="fab fa-tiktok"></i>
+            <span class="tooltip">Follow on TikTok</span>
+        </a>
+        <a href="https://wa.me/94703692432" target="_blank" class="social-float-icon message-icon">
+            <i class="fas fa-comment-alt"></i>
+            <span class="tooltip">Message Us: 0703692432</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-logo-container">
+                <a href="#" class="footer-logo">
+                    <span class="kyzen">KYZEN</span>
+                    <span class="x">X</span>
+                    <span class="cheats">CHEATS</span>
+                </a>
+            </div>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <p>
+                        Premium quality Free Fire PC panels with advanced features and undetectable protection.
+                        Elevate your gaming experience today with KYZEN x CHEATS.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Free Fire PC Panels</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Custom Scripts</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Anti-Ban Protection</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> 24/7 Support</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Regular Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope pulse"></i>
+                            <p>support@kyzen-cheats.com</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-discord pulse"></i>
+                            <p>discord.gg/kyzen-cheats</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-telegram pulse"></i>
+                            <p>t.me/kyzen_cheats</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 KYZEN x CHEATS. All Rights Reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="to-top" id="toTop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Optimized JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenu && navLinks) {
+            mobileMenu.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            const navLinksItems = document.querySelectorAll('.nav-links a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // Smooth scrolling with better performance
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Use requestAnimationFrame for smoother scrolling
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to top button with throttling
+        const toTopButton = document.getElementById('toTop');
+        
+        if (toTopButton) {
+            // Throttle scroll event for better performance
+            let lastScrollTop = 0;
+            let ticking = false;
+            
+            window.addEventListener('scroll', () => {
+                lastScrollTop = window.pageYOffset;
+                
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        if (lastScrollTop > 300) {
+                            toTopButton.classList.add('active');
+                        } else {
+                            toTopButton.classList.remove('active');
+                        }
+                        ticking = false;
+                    });
+                    
+                    ticking = true;
+                }
+            });
+
+            toTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+        
+        // Use Intersection Observer for better performance with animations
+        if ('IntersectionObserver' in window) {
+            // Create observer for feature cards
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // When element is in view, make animation visible
+                        entry.target.style.visibility = 'visible';
+                        cardObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            // Observe all feature and pricing cards
+            document.querySelectorAll('.feature-card, .pricing-card').forEach(card => {
+                cardObserver.observe(card);
+            });
+        }
+        
+        // Optimize form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to a server
+                // For this example, we'll just show a success message
+                
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Show success message
+                alert('Message sent successfully! We will contact you soon.');
+            });
+        }
+        
+        // Add data-text attribute to all section titles
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.setAttribute('data-text', title.textContent);
+        });
+        
+        // Defer non-critical operations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add slight delay to allow initial rendering to complete
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+                
+                // Glitch effect on hover for section titles
+                document.querySelectorAll('.section-title').forEach(title => {
+                    title.addEventListener('mouseover', () => {
+                        title.classList.add('glitch');
+                    });
+                    
+                    title.addEventListener('mouseout', () => {
+                        title.classList.remove('glitch');
+                    });
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
